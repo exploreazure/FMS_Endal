@@ -1,0 +1,93 @@
+/* element styles */
+    *{
+        -webkit-user-select: none;
+        box-sizing:border-box;
+    }
+
+    input,
+    textarea,
+    select,
+    a,
+    .ui-btn {
+        pointer-events: all;
+    }
+
+    input,
+    textarea,
+    select {
+        -webkit-user-select: auto;
+    }
+
+
+    /* This is a bit of hackery as without it jquerymobile never sets the page
+     * to be other than display: none. Should work out why and fix at source */
+    div[data-role="page"] {
+        display: block !important;
+    }
+
+    div.jquerymobile {
+        pointer-events: none;
+    }
+
+    /* 
+     * loading page
+     */
+
+/* locating screen */
+
+    #load-screen,
+    #locating {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: -2px;
+        z-index: 3010;
+        text-align: center;
+        background: #6090F0;
+        padding-top:20px;
+        color: white;
+    }
+
+    #allHeading {
+       display:none
+    }
+    
+    #allOptions {
+       display:none    
+    }
+    
+    #showCommonOnly {
+       display:none   
+    }
+
+    #load-screen .radar,
+    #locating .radar {
+        background: transparent url('../images/radar.png') no-repeat top center;
+        width: 100%;
+        height: 260px;
+        background-size: 260px 260px;
+    }
+
+    #locating #progress {
+        margin-top: 1em;
+        width:100%;
+        height:15px;
+        background-color: grey;
+    }
+
+    #locating #progress-bar {
+        width: 0%;
+        background-color: #FFFF99;
+        height: 15px;
+    }
+
+    #locating p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #locating .ui-shadow {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }

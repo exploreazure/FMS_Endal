@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta charset="utf-8">
+
+<!-- stylesheets -->
+<link rel="stylesheet" href="css/endal.css" type="text/css" title="no title" charset="utf-8">
+<link rel="stylesheet" href="css/themes/default/jquery.mobile.css" title="no title" charset="utf-8">
+<link rel="shortcut icon" href="favicon.ico" title="no title" charset="utf-8">
+
+<!-- FMS stylesheets excluded using jquery css only -->
+
+<!-- jquery at the top - Required by most other js frameworks -->
+<script src="jslib/jquery.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- inline javascript -->
+<script type="text/javascript">
+          var FMS = {}; // js object
+</script>
+
+<script type="text/javascript">
+    var fixmystreet = {
+         'page': 'around',
+          'area': '',
+          'all_pins': '',
+          'latitude': '',
+          'longitude': '',
+          'zoom': 4,
+          'numZoomLevels': 5,
+          'zoomOffset': 13,
+          'map_type': "",
+          'pins': [  ]
+
+    };
+</script>
+
+<!-- custom config scripts -->
+<script src="js/config.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mobile_config.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- framework scripts -->
+<script src="jslib/lodash.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="jslib/json2.js" type="text/javascript" charset="utf-8"></script>
+<script src="jslib/jquery.mobile.js" type="text/javascript" charset="utf-8"></script>
+<script src="cordova.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="jslib/moment-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="jslib/backbone.js" type="text/javascript" charset="utf-8"></script>
+<script src="jslib/backbone.localStorage-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="jslib/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+
+
+<!-- FMS JS -->
+<script src="js/softkeyboard.js" type="text/javascript" charset="utf-8"></script>
+
+
+<!-- custom scripts block 1 -->
+<script src="js/stylelib.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/models/draft.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/validateForm.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- views -->
+<script src="js/views/fms.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/views/around.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/views/utils.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/views/settings.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/views/photo.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/views/detailsCat.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/views/details.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/views/submit.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/views/font.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/views/colour.js" type="text/javascript" charset="utf-8"></script>
+
+
+<!-- custom scripts block 2 -->
+<script src="js/router.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+
+
+</head>
+<body onload="onload()">
+	<div class="jquerymobile"></div>
+ 	<!-- removed as load screen prevents talkback from being activated
+ 		<div id="load-screen">
+		<div class="radar"></div>
+	    </div>
+	-->
+</body>
+</html>    
+        

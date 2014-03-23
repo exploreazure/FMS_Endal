@@ -1,0 +1,23 @@
+<div data-role="header" data-position="fixed">
+	<h1>Report details</h1>
+	<a id="home" data-icon="home" class="ui-btn-right" data-direction="reverse">Home</a>
+</div><!-- /header -->
+
+<br/><br/>
+<div role="main" class="ui-content">
+	<form action="" class="detailsForm" id="detailsForm" method="post">
+		<fieldset>
+		<legend>Please enter the required details to report a problem to the council.</legend>
+		<br/>
+		<label for="emailAddress">Email address:</label>
+		<input type="email" name="emailAddress" id="emailAddress" placeholder="Please provide a email address" value="" required/>
+		<label for="repTitle">Report title:</label>
+		<input type="text" name="repTitle" id="repTitle" placeholder="Please provide a title for the report" value="" required/>		
+		<label for="repDetails">Report details:</label>
+		<textarea name="repDetails" placeholder="Please provide some details about the report" id="repDetails" required></textarea>		
+		<br/>
+		<!-- <button id="submitBtn" type="submit" class="ui-btn ui-icon-check ui-btn-icon-right">Submit report</button> -->
+		<input id="submitBtn" type="submit" value="Submit report" />
+		</fieldset>
+	</form>
+</div><!-- /content -->

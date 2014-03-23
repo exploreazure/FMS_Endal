@@ -1,0 +1,95 @@
+	<div data-role="header" data-position="fixed">
+		<h1>Select a category</h1>
+		<a id="home" data-icon="home" class="ui-btn-right" data-direction="reverse">Home</a>
+	</div><!-- /header -->
+    <br/>
+	<div role="main" class="ui-content">
+	    <form action="" class="detailsCatForm" id="detailsCatForm">
+	        <h3 id="commonHeading">Common categories</h3>
+	        <h3 id="allHeading">All categories</h3>
+	        <p>Please select a category to help direct the report to the correct department within the council.</p> 
+	        <a id="showMore" class="ui-btn ui-icon-bullets ui-btn-icon-right" data-ajax="false">Show all categories</a> 
+            <br/>
+	        <!-- 
+	             The below options should be loaded using a database lookup.
+	             Due to development time scales, this feature has been implemented
+	             using static code. In production this code should be replaced with
+	             a database lookup routine
+	        -->
+	        <div id="commonOptions">
+		        <div data-role="controlgroup">        
+	                <label for="radio-choice-veh_c">Abandoned vehicle</label> 
+		            <input type="radio" name="category" id="radio-choice-veh_c" value="1" class="required"/>  
+		            <label for="radio-choice-bus_c">Bus stops</label> 
+		            <input type="radio" name="category" id="radio-choice-bus_c" value="2" /> 
+		            <label for="radio-choice-cpark_c">Car parking</label> 
+		            <input type="radio" name="category" id="radio-choice-cpark_c" value="3" /> 
+		            <label for="radio-choice-dog_c">Dog Fouling</label>
+			        <input type="radio" name="category" id="radio-choice-dog_c" value="4" /> 
+			        <label for="radio-choice-flyt_c">Fly tipping</label>
+			        <input type="radio" name="category" id="radio-choice-flyt_c" value="6" />
+			        <label for="radio-choice-bin_c">Missed waste collection</label>
+			        <input type="radio" name="category" id="radio-choice-bin_c" value="8" />
+			        <label for="radio-choice-noise_c">Noise Complaint</label>
+			        <input type="radio" name="category" id="radio-choice-noise_c" value="9" />
+			        <label for="radio-choice-park_c">Park Landscapes</label>
+			        <input type="radio" name="category" id="radio-choice-park_c" value="10" />
+			        <label for="radio-choice-pavements_c">Pavements or footpath</label>
+			        <input type="radio" name="category" id="radio-choice-pavements_c" value="11" />
+			        <label for="radio-choice-toilet_c">Public Toilets</label>
+			        <input type="radio" name="category" id="radio-choice-toilet_c" value="13" />   
+			    </div>
+			</div>
+	           
+	        
+	        <div id="allOptions">
+		        <div data-role="controlgroup">
+		            <label for="radio-choice-veh">Abandoned vehicle</label> 
+		            <input type="radio" name="category" id="radio-choice-veh" value="1" class="required" />             
+		            <label for="radio-choice-bus">Bus stops</label> 
+		            <input type="radio" name="category" id="radio-choice-bus" value="2" />
+		            <label for="radio-choice-cpark">Car parking</label> 
+		            <input type="radio" name="category" id="radio-choice-cpark" value="3" />  
+		            <label for="radio-choice-dog">Dog Fouling</label>
+			        <input type="radio" name="category" id="radio-choice-dog" value="4" /> 
+		            <label for="radio-choice-flyp" class="allOptions">Flyposting</label> 
+		            <input type="radio" name="category" id="radio-choice-flyp" value="5" /> 	        
+			        <label for="radio-choice-flyt" class="allOptions">Flytipping</label>
+		            <input type="radio" name="category" id="radio-choice-flyt" value="6" />
+		            <label for="radio-choice-graf">Graffiti</label> 
+		            <input type="radio" name="category" id="radio-choice-graf" value="7" />	
+			        <label for="radio-choice-bin">Missed waste collection</label>
+			        <input type="radio" name="category" id="radio-choice-bin" value="8" />
+			        <label for="radio-choice-noise">Noise Complaint</label>
+			        <input type="radio" name="category" id="radio-choice-noise" value="9" />
+			        <label for="radio-choice-park">Park Landscapes</label>
+			        <input type="radio" name="category" id="radio-choice-park" value="10" />
+			        <label for="radio-choice-pavements">Pavements or footpath</label>
+			        <input type="radio" name="category" id="radio-choice-pavements" value="11" />
+			        <label for="radio-choice-pot">Potholes</label>
+			        <input type="radio" name="category" id="radio-choice-pot" value="12" />	        
+			        <label for="radio-choice-toilet">Public Toilets</label>
+			        <input type="radio" name="category" id="radio-choice-toilet" value="13" />
+			        <label for="radio-choice-road">Roads/Highways</label>
+			        <input type="radio" name="category" id="radio-choice-road" value="14" />	        
+			        <label for="radio-choice-rsign">Road traffic signs</label>
+			        <input type="radio" name="category" id="radio-choice-rsign" value="15" />
+			        <label for="radio-choice-sclean">Street Cleaning</label>
+			        <input type="radio" name="category" id="radio-choice-sclean" value="16" />
+			        <label for="radio-choice-slight">Street lighting</label>
+			        <input type="radio" name="category" id="radio-choice-slight" value="17" />
+			        <label for="radio-choice-sname">Street nameplates</label>
+			        <input type="radio" name="category" id="radio-choice-sname" value="18" />
+			        <label for="radio-choice-tlight">Traffic lights</label>
+			        <input type="radio" name="category" id="radio-choice-tlight" value="19" />
+			        <label for="radio-choice-tree">Trees</label>
+			        <input type="radio" name="category" id="radio-choice-tree" value="20" />	        	        	        	        	        
+		          </div>
+		    </div>
+	        <br/>
+	        <a id="showCommonOnly" class="ui-btn ui-icon-delete ui-btn-icon-right" data-ajax="false">Show only common categories</a> 
+	        <br/><br/>
+	        <input id="photo" type="submit" value="Continue" />
+	        <br/>
+	    </form>
+	 </div><!-- /content -->
